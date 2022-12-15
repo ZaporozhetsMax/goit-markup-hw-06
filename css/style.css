@@ -685,8 +685,8 @@ footer {
 
 .footer-cont {
   display: flex;
-  align-items: baseline;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
 }
 .footer-invite-item {
   display: flex;
@@ -706,7 +706,7 @@ footer {
   outline: transparent;
 }
 .footer-mailing {
-  margin-left: 93px;
+  margin-left: auto;
 }
 .footer-mailing-text {
   margin-bottom: 20px;
@@ -789,11 +789,11 @@ footer {
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--second-color);
+  width: 100%;
   /* margin-bottom: 10px; */
 }
 .modal-input-text {
   padding-left: 42px;
-  display: flex;
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -804,19 +804,26 @@ footer {
 textarea {
   resize: none;
 }
-.modal-input-wrap > textarea {
+.modal-input-wrap textarea {
+  display: block;
   margin-bottom: 20px;
   height: 120px;
-  padding-left: 16px;
+  padding: 12px 16px;
 }
 textarea::placeholder {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 textarea::not(::placeholder-shown) {
   border-color: var(--accent-color);
 }
-.modal-person-icon {
-}
+/* .modal-person-icon {
+} */
 .modal-input-text:focus + svg,
 .modal-input-text:hover + svg {
   fill: var(--accent-color);
@@ -893,9 +900,6 @@ textarea::not(::placeholder-shown) {
   color: var(--primery-color);
   margin-bottom: 12px;
 }
-.label-text {
-  width: 100%;
-}
 
 .modal-agree-btn {
   margin-top: 30px;
@@ -919,8 +923,8 @@ textarea::not(::placeholder-shown) {
 }
 
 .modal-input-wrap {
-  margin-bottom: 10px;
   margin-top: 4px;
+  margin-bottom: 10px;
   position: relative;
 }
 .modal-person-icon {
