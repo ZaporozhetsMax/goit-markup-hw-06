@@ -306,11 +306,7 @@ header .container {
 .main-link.img {
   margin-right: 0;
 }
-/* .main-link > .img-portfolio {
-  display: block;
-  position: relative;
-  overflow: hidden;
-} */
+
 .main-link-list-foto {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -325,24 +321,20 @@ header .container {
   /* transform: translateY(-408px); */
   transform: translateY(-294px);
 }
-/* .img-portfolio {
-  display: block;
+
+.img-overley{
   position: relative;
   overflow: hidden;
-} */
-/* .main-link-list-foto {
-  position: relative;
-  overflow: hidden;
-  transition: transform 250px cubic-bezier(0.4, 0, 0.2, 1);
-} */
+transition: transform 250px cubic-bezier(0.4, 0, 0.2, 1);}
+
+
 .overley {
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 294px;
-  width: 370px;
-  /* width: 100%; */
+  width: 100%;
   padding: 0 24px;
   background: rgba(33, 150, 243, 0.9);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
